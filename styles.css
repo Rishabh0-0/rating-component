@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     background-color: black;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Overpass", sans-serif;
 }
 
+/************** Card ***************/
 .card {
     width: 25rem; 
     border-radius: 2rem;
@@ -16,13 +21,44 @@ body {
     color: #fff;
 }
 
+/************* Image ****************/
+.main-card img {
+    background-color: #343a40;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+
+/************* Circle Btn ***********/
 .btn-circle {
     border-radius: 50%;
     height: 3rem; width: 3rem;
-    background-color: #222;
+    background-color: #343a40;
 }
 
+.btn-circle:hover {
+    background-color: #1e2124;
+    border-color: #1e2124;
+}
+
+.btn-circle:focus {
+    background-color: black;
+}
+
+
+/************* Submit Btn ************/
 .btn-submit {
     border-radius: 2rem;
     background-color: orange;
 }
+
+.btn-submit:hover {
+    background-color: #e66a00;
+}
+
+/************ Thankyou card ***********/
+.rating-text {
+    background-color: grey;
+    border-radius: 2rem;
+}
+
